@@ -14,7 +14,7 @@ const Stastics = (props) => {
       Neutral: {props.neutral}<br></br>
       Bad: {props.bad}<br></br>
       All: {props.good+props.neutral+props.bad}<br></br>
-      Average:{props.good+(-props.bad)}<br></br>
+      Average:{(props.good-props.bad)/props.all}<br></br>
       Positive: {(props.good/props.all)*100}%<br></br>
     </div>
   )
